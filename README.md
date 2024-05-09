@@ -16,8 +16,9 @@ To perform sentiment analysis, I investigated a number of approaches.
 
 First, since I was working with raw survey data, I had to label each review as positive [label = 1] or negative [label = 0] and remove any identifying details. I initially started with survey data the afformentioned professor gave me + some Rate My Professor [RMP] reviews of the target professor [dataset of 53 sentences of reviews]. Later on, I expanded the dataset by supplementing my spreadsheet with RMP reviews of other Tulane professors who teach CELL courses.
 
-Throughout my entire project, I ended up building models for sentiment analysis using:
-- logistic regression
+Throughout this entire project, I ended up building numerous models for sentiment analysis. These include:
+- naive bayes
+- logistic regression [one-hot & GloVe]
 - HMMs [for POS modeling]
 - an RNN model
 
@@ -26,7 +27,7 @@ Throughout my entire project, I ended up building models for sentiment analysis 
 
 My major takeaway from this project is that working with raw, unlabeled text can be challenging! I had a hard time building models that accurately accomplished the task I planned.
 
-Ultimately, with my RNN model, I was able to achieve a sentiment analysis [binary classification] accuracy of 0.71, providing evidence that this model might be worthwhile.
+Ultimately, with my RNN model, I was able to achieve a sentiment analysis [binary classification] accuracy of 0.76, providing evidence that my efforts may have been worthwhile.
 
 With more time to work on this assignment, I would hope to work with more data and continue designing models from scratch [+ take the time to tune the hyperparameters correctly]
 
