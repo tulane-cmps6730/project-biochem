@@ -9,7 +9,7 @@ import sys
 clf, vec = pickle.load(open(clf_path, 'rb'))
 print('read clf %s' % str(clf))
 print('read vec %s' % str(vec))
-labels = ['liberal', 'conservative']
+labels = ['positive', 'negative']
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
